@@ -1,0 +1,21 @@
+service:
+
+  http:
+    serviceType: NodePort
+    port: 3000
+    nodePort: 30300
+    externalPort: 30300
+    externalHost: kubernetes.docker.internal
+
+  ssh:
+    serviceType: NodePort
+    port: 22
+    nodePort: 30022
+    externalPort: 30022
+    externalHost: kubernetes.docker.internal
+
+#Local Docker Desktop Cluster Preexisting PVCs
+persistence:
+  enabled: true
+  existingGiteaClaim: gitea-gitea
+  existingPostgresClaim: gitea-postgres
