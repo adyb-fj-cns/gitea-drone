@@ -34,3 +34,6 @@ helm install --name drone stable/drone -f ./drone.yaml
 3. Sync and activate repositories
 
 
+## Links
+* https://github.com/jfelten/gitea-helm-chart
+* https://docs.drone.io/server/provider/gitea/
