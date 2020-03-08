@@ -35,5 +35,7 @@ helm install --name drone stable/drone -f ./drone.yaml
 
 
 ## Links
+* https://docs.gitea.io/en-us/
+* https://docs.drone.io/
 * https://github.com/jfelten/gitea-helm-chart
 * https://docs.drone.io/server/provider/gitea/
