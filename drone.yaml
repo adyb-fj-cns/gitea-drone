@@ -12,5 +12,5 @@ sourceControl:
   secret: drone-server-secrets
 
   gitea:
-    clientID: 36e2bfc1-5fb3-419b-902e-af5906e8844e
+    clientID: d01d0a7f-2694-434a-a2a8-8dbdf467800a
     server: http://kubernetes.docker.internal:30300

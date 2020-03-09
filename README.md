@@ -21,7 +21,7 @@ helm install --name gitea gitea-1.9.3.tgz -f ./gitea.yaml
 
 ## Drone
 
-1. Create secret using oauth client secret
+1. Create secret using oauth client secret or set in drone.yml under gitea.clientSecretValue
 ```
 kubectl create secret generic drone-server-secrets \
       --namespace=default \
@@ -33,9 +33,16 @@ helm install --name drone stable/drone -f ./drone.yaml
 ```
 3. Sync and activate repositories
 
+## Local private docker registry (optional)
+1. Install with helm
+```
+helm install --name docker-registry stable/docker-registry -f ./docker-registry.yaml
+```
 
 ## Links
 * https://docs.gitea.io/en-us/
 * https://docs.drone.io/
+* https://github.com/helm/charts/tree/master/stable/drone
 * https://github.com/jfelten/gitea-helm-chart
 * https://docs.drone.io/server/provider/gitea/
+* https://jsonnet.org/
